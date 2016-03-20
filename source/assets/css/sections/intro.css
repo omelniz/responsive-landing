@@ -1,0 +1,48 @@
+.section--intro {
+    padding-top: 262px;
+    padding-right: 4.5%;
+    padding-bottom: 64px;
+    padding-left: 4.5%;
+    background: url(../images/intro-bg.jpg) 90% 50% no-repeat;
+    background-size: cover;
+
+    .intro-title {
+        margin-bottom: 19px;
+        max-width: 1046px;
+        color: #fff;
+        font-weight: 200;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .intro-desc {
+        margin-bottom: 36px;
+        max-width: 1046px;
+        color: #9b9b9b;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .intro-openAccountBtn {
+        max-width: 304px;
+        width: 100%;
+    }
+    .section-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: $max-width;
+    }
+}
+
+@mixin respond-to $breakpoint-phablet {
+    .section--intro {
+
+        .intro-title {
+            font-size: 66px;
+            line-height: 73px;
+        }
+        .intro-desc {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.section--paymentSystems {
+    margin-bottom: 70px;
+    padding-right: 4.5%;
+    padding-left: 4.5%;
+
+    .section-title {
+        margin-bottom: 65px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    .section-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: $max-width;
+    }
+    .paymentSystems-item {
+        text-align: center;
+    }
+
+    .paymentSystems {
+        .fotorama__arr {
+            height: 12px;
+            width: 12px;
+            margin-top: -6px;
+            background: url(../images/paymentSystems-arrows-sprite.png) no-repeat;
+
+            &.fotorama__arr--prev {
+                background-position: top left;
+            }
+            &.fotorama__arr--next {
+                background-position: top right;
+            }
+        }
+    }
+}
+
+@mixin respond-to $breakpoint-mobile-hd {
+    .section--paymentSystems {
+        .section-title {
+            font-size: 40px;
+            font-weight: 400;
+        }
+        .paymentSystems {
+            text-align: center;
+        }
+        .paymentSystems-item {
+            display: inline-block;
+            margin: 0px 3.4% 55px 3.4%;
+            vertical-align: top;
+        }
+    }
+}

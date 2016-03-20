@@ -1,0 +1,85 @@
+<footer class="footer">
+    <div class="footer-socialLinks">
+        {% include "../../partials/social-links.twig" %}
+    </div>
+    <nav class="footer-mobileNav">
+        <ul class="mobileNav-list">
+            <li class="mobileNav-item">
+                <a href="about.html" class="mobileNav-link">О компании</a>
+            </li>
+            <li class="mobileNav-item">
+                <a href="traiding.html" class="mobileNav-link">Торговля</a>
+            </li>
+            <li class="mobileNav-item">
+                <a href="tools.html" class="mobileNav-link">Инструменты</a>
+            </li>
+            <li class="mobileNav-item">
+                <a href="parthers.html" class="mobileNav-link">Партнерство</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footer-inner">
+        <div class="footer-row footer-row--nav">
+            {% for column in footerNav %}
+                <div class="footer-column footer-column--nav">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav-list">
+                            {% for navigation in column %}
+                                <li class="footer-nav-item">
+                                    {% if navigation.title and navigation.slug %}
+                                        <a class="footer-nav-link" href="{{ navigation.slug }}">{{ navigation.title }}</a>
+                                    {% endif %}
+                                    {% if navigation.submenu %}
+                                    <ul class="footer-subnav">
+                                        {% for submenu in navigation.submenu %}
+                                            <li class="footer-subnav-item">
+                                                <a class="footer-subnav-link" href="{{ submenu.slug }}">{{ submenu.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="footer-row">
+            <div class="footer-certificates">
+                <ul class="certificates-list">
+                    <li class="certificates-item">
+                        <a class="certificates-item-link" href="">
+                            <img src="images/certificates/sysec.png" alt="sysec">
+                        </a>
+                    </li>
+                    <li class="certificates-item">
+                        <a class="certificates-item-link" href="">
+                            <img src="images/certificates/beliz.png" alt="beliz">
+                        </a>
+                    </li>
+                    <li class="certificates-item">
+                        <a class="certificates-item-link" href="">
+                            <img src="images/certificates/nqa.png" alt="nqa">
+                        </a>
+                    </li>
+                    <li class="certificates-item">
+                        <a class="certificates-item-link" href="">
+                            <img src="images/certificates/sm.png" alt="sm">
+                        </a>
+                    </li>
+                    <li class="certificates-item">
+                        <a class="certificates-item-link" href="">
+                            <img src="images/certificates/cascade.png" alt="cascade">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-condition">
+                <p>Деятельность EXNESS (CY) LTD (регистрационный номер: HE 293057) регулируется CySEC (Cyprus Securities and Exchange Comission), лицензия №178/12. EXNESS LIMITED (VC), registration number 21927 (IBC 2014).</p>
+                <p>The information on this website may only be copied with the express written permition of EXNESS. CFD Являются продуктами маржинальной торговли, соответственно, убытки, понесенные в процессе торговли CFD, могут повысить начальный инвестированный капитал. Торговля CFD сопряжена с высоким уровнем риска и может не подходить для всех инвесторов. Инвестированная стоимость может, как увеличиваться, так и уменьшаться, и инвесторы могут потерять все свои вложенные средства. Компания ни при каких обстоятельствах не несет ответственности перед физическим или юридическим лицами за любые убытки или ущерб целиком или частично вызванные, являющиеся результатом,или имеющие отношение к любым операциям, связанных с CFD <a href="#">Подробнее</a></p>
+                <small class="copyright">© 2008—2016. Exness</small>
+            </div>
+        </div>
+    </div>
+</footer>

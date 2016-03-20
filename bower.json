@@ -1,0 +1,21 @@
+{
+  "name": "ExnessLanding",
+  "version": "0.0.1",
+  "authors": [
+    "omelniz <mail@omelniz.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fotorama": "^4.6.4",
+    "enquire": "^2.1.2",
+    "jquery.inputmask": "^3.2.7"
+  }
+}

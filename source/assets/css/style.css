@@ -1,0 +1,32 @@
+/* Config */
+@import "config/variables";
+@import "config/breakpoints";
+
+/* Helpers */
+@import "helpers/mixins";
+
+/* Core */
+@import "core/reset";
+@import "core/fonts";
+@import "core/buttons";
+@import "core/forms";
+
+/* Plugins */
+@import "plugins/fotorama";
+
+/* Layout */
+@import "layout/body";
+@import "layout/header";
+@import "layout/footer";
+
+/* Partials */
+@import "partials/social-links";
+
+/* Sections */
+@import "sections/intro";
+@import "sections/fee";
+@import "sections/payment-systems";
+@import "sections/open-account";
+
+/* Forms */
+@import "forms/open-account";

@@ -1,0 +1,57 @@
+{
+    "title": "Exness Landing Page",
+    "footerNav": [
+        [
+            {
+                "title": "О компании",
+                "slug": "/about.html",
+                "submenu": [
+                    {"title": "Общие сведения", "slug": "/common.html"},
+                    {"title": "Почему EXNESS?", "slug": "/why-exness.html"},
+                    {"title": "Менеджмент", "slug": "/managment.html"},
+                    {"title": "Регуляция", "slug": "/regulation.html"},
+                    {"title": "Служба поддержки клиентов", "slug": "/clients-help.html"}
+                ]
+            }
+        ],
+        [
+            {
+                "title": "Торговля",
+                "slug": "/traiding.html",
+                "submenu": [
+                    {"title": "Открыть торговый счет", "slug": "/open-account.html"},
+                    {"title": "Пополнение и снятие средств", "slug": "/money.html"},
+                    {"title": "Спецификации контрактов", "slug": "/specification.html"},
+                    {"title": "Правила предоставления кредитного плеча", "slug": "/credit.html"}
+                ]
+            }
+        ],
+        [
+            {
+                "title": "Инструменты",
+                "slug": "/tools.html",
+                "submenu": [
+                    {"title": "MetaTrader 4", "slug": "/meta-trader-4.html"},
+                    {"title": "MetaTrader 5", "slug": "/meta-trader-5.html"},
+                    {"title": "Webtrader", "slug": "/webtrader.html"},
+                    {"title": "Мобильные платформы", "slug": "/mobile.html"}
+                ]
+            }
+        ],
+        [
+            {
+                "submenu": [
+                    {"title": "Экономический календарь", "slug": "/calendar.html"},
+                    {"title": "Аналитика", "slug": "/analytics.html"},
+                    {"title": "Калькулятор трейдера и конвертер валют", "slug": "/calculator.html"},
+                    {"title": "Загрузки", "slug": "/downloads.html"}
+                ]
+            }
+        ],
+        [
+            {"title": "Партнерство", "slug": "/parthers.html"},
+            {"title": "Библиотека", "slug": "/library.html"},
+            {"title": "FAQ", "slug": "/faq.html"}
+        ]
+    ]
+}

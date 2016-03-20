@@ -1,0 +1,59 @@
+.form--openAccount {
+    .form-row {
+        margin-bottom: 23px;
+
+        &::after {
+            content: "";
+            display: table;
+            width: 100%;
+            clear: both;
+        }
+    }
+
+    .form-col {
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .form-submitBtn {
+        width: 100%;
+    }
+
+    .form-help {
+        font-style: 13px;
+        line-height: 16px;
+        max-width: 530px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-input-tip {
+        margin-top: 16px;
+        font-size: 11px;
+        color: #9b9b9b;
+        margin-left: 24px;
+        display: none;
+    }
+}
+
+@mixin respond-to $breakpoint-phablet {
+    .form--openAccount {
+        .form-col {
+            width: 33.3%;
+            float: left;
+            margin-bottom: 0px;
+        }
+
+        .form-input-tip {
+            display: block;
+        }
+
+        .form-help {
+            font-style: 14px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{%
+    set socialLinks = {
+        "vk": "http://www.filspay.com/",
+        "ok": "http://www.cashu.com/",
+        "twitter": "https://perfectmoney.is",
+        "facebook": "http://www.webmoney.ru/",
+        "youtube": "https://www.neteller.com/en/",
+        "linkedin": "http://www.mastercard.com/ru",
+        "star": "https://payweb.com/",
+        "instagram": "https://www.ukash.com/",
+        "gplus": "https://www.ukash.com/"
+    }
+%}
+<div class="socialLinks">
+    <ul class="socialLinks-list">
+        {% for name, link in socialLinks %}
+            <li class="socialLinks-item socialLinks-item--{{ name }}">
+                <a href="{{ link }}" title="Перейти на сайт {{ name }}"></a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

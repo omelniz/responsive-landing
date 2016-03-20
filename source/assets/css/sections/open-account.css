@@ -1,0 +1,11 @@
+.section--openAccount {
+    margin-bottom: 54px;
+    padding-right: 4%;
+    padding-left: 4%;
+
+    .form--openAccount {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1034px;
+    }
+}

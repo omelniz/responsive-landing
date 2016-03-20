@@ -1,0 +1,38 @@
+.btn {
+    @mixin reset-btn;
+    @mixin font-circe;
+
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+
+    &.is-disable {
+        cursor: default;
+    }
+}
+
+.btn--primary {
+    background: $color-primary;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 29px 74px 27px 33px;
+    position: relative;
+    letter-spacing: .8px;
+
+    &::after {
+        content: "";
+        background: url(../images/arrow-right.png) no-repeat;
+        background-size: 24px 24px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        right: 24px;
+    }
+}

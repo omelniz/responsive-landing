@@ -1,0 +1,78 @@
+.section--fee {
+    box-sizing: border-box;
+    margin-bottom: 49px;
+    padding-top: 45px;
+    padding-right: 4.5%;
+    padding-bottom: 52px;
+    padding-left: 4.5%;
+    background: $color-primary;
+
+    .fee-percent {
+        position: relative;
+        text-align: center;
+    }
+    .fee-percent-title {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 50px;
+        display: none;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 20px;
+        transform: rotate(270deg);
+    }
+    .fee-percent-value {
+        margin-bottom: 30px;
+        max-width: 50%;
+        font-size: 220px;
+    }
+    .fee-percent-caption {
+        display: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .fee-desc {
+        text-align: center;
+
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    .section-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: $max-width;
+    }
+}
+
+@mixin respond-to $breakpoint-tablet {
+    .section--fee {
+        .fee-percent,
+        .fee-desc {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .fee-percent-title,
+        .fee-percent-caption {
+            display: block;
+        }
+        .fee-percent {
+            width: 47%;
+        }
+        .fee-percent-value {
+            max-width: 100%;
+        }
+        .fee-desc {
+            width: 52%;
+            text-align: left;
+
+            p {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}

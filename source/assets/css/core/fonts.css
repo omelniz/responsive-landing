@@ -1,0 +1,23 @@
+@mixin add-custom-font "Circe", ../fonts/Circe/regular, circe-regular {
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin add-custom-font "Circe", ../fonts/Circe/bold, circe-bold {
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin add-custom-font "Circe", ../fonts/Circe/extra-light, circe-extra-light {
+    font-style: normal;
+    font-weight: 200;
+}
+
+@mixin add-custom-font "Circe", ../fonts/Circe/light, circe-light {
+    font-style: normal;
+    font-weight: 300;
+}
+
+@define-mixin font-circe {
+    font-family: "Circe", sans-serif;
+}

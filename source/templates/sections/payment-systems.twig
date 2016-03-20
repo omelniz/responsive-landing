@@ -1,0 +1,27 @@
+{%
+    set paymentSystems = {
+        "filspay": "http://www.filspay.com/",
+        "cash": "http://www.cashu.com/",
+        "perfect-money": "https://perfectmoney.is",
+        "webmoney": "http://www.webmoney.ru/",
+        "neteller": "https://www.neteller.com/en/",
+        "masterCart-and-visa": "http://www.mastercard.com/ru",
+        "payweb": "https://payweb.com/",
+        "ukash": "https://www.ukash.com/"
+    }
+%}
+
+<section class="section section--paymentSystems">
+    <div class="section-inner">
+        <h2 class="section-title">Доступные платежные системы</h2>
+        <div class="paymentSystems js-paymentSystems">
+            {% for name, link in paymentSystems %}
+                <div class="paymentSystems-item">
+                    <a href="{{ link }}" title="Перейти на сайт платежной системы">
+                        <img src="images/payment-systems/{{ name }}.png" alt="{{ name }}" />
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

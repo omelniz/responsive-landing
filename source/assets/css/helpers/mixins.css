@@ -1,0 +1,105 @@
+@define-mixin add-custom-font $fontName, $pathToFont, $fileName {
+    @font-face {
+        font-family: $fontName;
+        src: url("$(pathToFont)/$(fileName).eot");
+        src: url("$(pathToFont)$(fileName).eot?#iefix") format('embedded-opentype'),
+        url("$(pathToFont)/$(fileName).ttf") format('truetype'),
+        url("$(pathToFont)/$(fileName).woff") format('woff'),
+        url("$(pathToFont)/$(fileName).svg") format('svg');
+
+        @mixin-content;
+  	}
+}
+
+@define-mixin underline-rgba $color: #000000 {
+    text-decoration: none;
+    border-bottom: 1px solid $color;
+    border-color: color($color a(.15));
+    display: inline;
+    transition: border-color .3s ease-out, color .3s ease-out;
+
+    &:hover {
+        border-color: color($color a(1));
+    }
+}
+
+@define-mixin preudo-link $color: #000000 {
+    text-decoration: none;
+    border-bottom: 1px dashed $color;
+    border-color: color($color a(.15));
+    display: inline;
+    transition: border-color .3s ease-out, color .3s ease-out;
+
+    &:hover {
+        border-color: color($color a(1));
+    }
+}
+
+@define-mixin reset-underline-rgba {
+    border-bottom: none;
+    color: inherit;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+@define-mixin reset-btn {
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+@define-mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@define-mixin reset-text-input {
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+@define-mixin center $max-width: 1182px {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@define-mixin placeholder {
+    &.placeholder {
+        @mixin-content;
+    }
+    &:-ms-input-placeholder {
+        @mixin-content;
+    }
+    &:-moz-placeholder {
+        @mixin-content;
+    }
+    &::-moz-placeholder {
+        @mixin-content;
+    }
+    &:-webkit-input-placeholder {
+        @mixin-content;
+    }
+    &::-webkit-input-placeholder {
+        @mixin-content;
+    }
+}
+
+@define-mixin respond-to $breakpoint-name {
+    @media screen and (min-width: $breakpoint-name) {
+        @mixin-content;
+    }
+}
